@@ -1,0 +1,30 @@
+// After this 5 out of 11 packages succeeded
+sudo catkin clean
+sudo catkin config --extend /opt/ros/melodic
+sudo catkin build
+source devel/setup.bash 
+echo $CMAKE_PREFIX_PATH
+
+source /opt/ros/melodic/setup.bash
+
+>> The most important one:
+source ~/.bashrc
+
+sudo chown -R $
+
+now the docker that i need to use is inside Documents
+to build the catkin workspace:
+fcc
+cd ..
+sudo chown -R $freicar:freicar freicar_ws
+sudo chown -R $freicar:freicar freicar_deps
+then cd freicar_ws
+catkin build 
+
+Doubts:
+- Cannot move to target thread (0x557fe5a08d60)
+
+
+git reset --hard HEAD
+git clean -f -d
+git pull
